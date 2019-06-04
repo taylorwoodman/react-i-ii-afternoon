@@ -1,0 +1,93 @@
+.App {
+  background: rgb(37, 37, 37);
+  height: 100vh;
+  width: 100vw;
+ 
+}
+
+.Header {
+    background: rgb(89, 175, 255);
+    height: 100px;
+    width: 100vw;
+}
+
+.Home {
+    height: 100px;
+    width: 75px;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 37.5px
+}
+
+.InfoBox {
+    background: white;
+    width: 750px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 75px 25%;
+}
+
+.Name{
+    background: blue;
+    width: 75%;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 20px
+}
+
+.Info {
+    background: red;
+    width: 75%;
+    height: 150px;
+    margin-left: 40px;
+    padding-top: 10px
+}
+
+.Movies {
+    background: green;
+    width: 75%;
+    height: 150px;
+    margin-left: 40px
+}
+
+.Previous {
+    /* margin-left: 347px; */
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    
+}
+
+.Next {
+    /* margin-left: 631px; */
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    justify-content: flex-end;
+    
+}
+
+.Buttons {
+    margin: 3px
+}
+
+.Body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    width: 100vw
+}
+
+.Footer {
+    display: flex;
+    align-self: center;
+    width: 75%;
+    height: 10px
+}
