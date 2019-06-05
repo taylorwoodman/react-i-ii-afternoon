@@ -2,92 +2,77 @@
   background: rgb(37, 37, 37);
   height: 100vh;
   width: 100vw;
- 
 }
 
 .Header {
-    background: rgb(89, 175, 255);
-    height: 100px;
-    width: 100vw;
+  background: rgb(89, 175, 255);
+  height: 75px;
+  width: 100vw; 
 }
 
 .Home {
-    height: 100px;
-    width: 75px;
-    text-align: center;
-    padding-left: 15px;
-    padding-top: 37.5px
+    width: 50px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px 50px;
+    font-weight: 600
 }
 
 .InfoBox {
-    background: white;
-    width: 750px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: 75px 25%;
-}
-
-.Name{
-    background: blue;
-    width: 75%;
-    height: 50px;
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 20px
-}
-
-.Info {
-    background: red;
-    width: 75%;
-    height: 150px;
-    margin-left: 40px;
-    padding-top: 10px
-}
-
-.Movies {
-    background: green;
-    width: 75%;
-    height: 150px;
-    margin-left: 40px
+  background: white;
+  width: 750px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 75px 25% 3px;
+  /* padding-left: 50px */
 }
 
 .Previous {
-    /* margin-left: 347px; */
-    border: none;
-    background: transparent;
-    outline: none;
-    color: white;
-    
+  /* margin-left: 347px; */
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 20px;
 }
 
 .Next {
-    /* margin-left: 631px; */
-    border: none;
-    background: transparent;
-    outline: none;
-    color: white;
-    justify-content: flex-end;
-    
+  /* margin-left: 631px; */
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  justify-content: flex-end;
+  font-size: 20px;
 }
 
 .Buttons {
-    margin: 3px
+  margin: 3px;
+  width: 750px;
+  justify-content: space-between;
+  display: flex;
+  margin: 1px 25%;
 }
 
-.Body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: calc(100vh - 100px);
-    width: 100vw
+.Box {
+  padding-left: 50px;
 }
 
-.Footer {
-    display: flex;
-    align-self: center;
-    width: 75%;
-    height: 10px
+.Page {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.Name {
+  /* padding-left: 50px; */
+  text-decoration: rgb(89, 175, 255) underline;
+  font-weight: 700;
+  font-size: 30px;
 }
