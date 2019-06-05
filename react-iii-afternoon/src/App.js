@@ -41,19 +41,33 @@ class App extends React.Component {
       user: data[0]
     };
     this.nextUser = this.nextUser.bind(this);
-    this.perviousUser = this.perviousUser.bind(this);
+    this.previousUser = this.previousUser.bind(this);
   }
 
   nextUser() {
     let { page } = this.state;
     page = page + 1;
-    this.setState({ page: page, user: data[page] });
+    if(page === data.length) {
+      return this.setState(
+        { page: 0, 
+          user: data[0] }
+      )
+    }
+    this.setState({ page: page, 
+      user: data[page] });
   }
 
-  perviousUser() {
+  previousUser() {
     let { page } = this.state;
     page = page - 1;
-    this.setState({ page: page, user: data[page] });
+    if(page <= 0) {
+      return this.setState({
+        page: data.length,
+        data: data[data.length]
+      })
+    }
+    this.setState({ page: page, 
+      user: data[page] });
   }
 
   render() {
@@ -67,7 +81,7 @@ class App extends React.Component {
             <Item displayUser={this.state.user} />
           </div>
           <div className="Buttons">
-            <button className="Previous" onClick={this.perviousUser}>
+            <button className="Previous" onClick={this.previousUser}>
               {"<"} Previous
             </button>
             <button className="Next" onClick={this.nextUser}>
